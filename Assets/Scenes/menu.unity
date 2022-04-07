@@ -412,6 +412,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310389559}
   m_CullTransparentMesh: 1
+--- !u!1 &332922796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 332922798}
+  - component: {fileID: 332922797}
+  m_Layer: 0
+  m_Name: DataContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &332922797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332922796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93b34cbcca7c014bbda3a0e34953574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &332922798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332922796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 604.375, y: 426.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &393384003
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +468,6 @@ GameObject:
   - component: {fileID: 393384005}
   - component: {fileID: 393384004}
   - component: {fileID: 393384008}
-  - component: {fileID: 393384009}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -526,18 +568,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d9f13b0a5089b74a89a2b7d9ccb71b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &393384009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393384003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9e6ae39ca62a5e439577cf3ddef06a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &721937451
@@ -641,8 +671,8 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 393384009}
-        m_TargetAssemblyTypeName: ReadInput, Assembly-CSharp
+      - m_Target: {fileID: 332922797}
+        m_TargetAssemblyTypeName: DataContainer, Assembly-CSharp
         m_MethodName: ReadStringInput
         m_Mode: 0
         m_Arguments:

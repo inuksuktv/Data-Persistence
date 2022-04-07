@@ -8,9 +8,9 @@ using UnityEngine.SceneManagement;
 [DefaultExecutionOrder(1000)]
 public class MenuUIHandler : MonoBehaviour
 {
+    public static MenuUIHandler Instance;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
 
     }
